@@ -1,1 +1,7 @@
 # Trend-Detection
+This was my attempt to create a workflow that would help to inform my Trend Following Trades with some statistics to understand what points would be more effective in countering the trend as well as what points would be more likely to expect a pullback. I am still working through this project, but most of the heavy lifting as far as conceptualization and wirtten functions are finished. Here I
+* Downloaded market data from hourly S&P 500 futures data in OHLC values for 730 days (max allowed)
+* Looped through each day of the data and used sci-py to scan for maxima and minima(peaks and troughs) to identify swings
+*  Recorded those maxima and minima and some details with them to create a seperate dataframe to use for anaylsis
+*  Added some indicators using pandas-ta to assist in classifying the market behavior on each day, as well as to look at the amount of points for every opposing move (For instance, If the move is a 'Up Move: Swing' and the difference is 15 points, the opposing move would be a pullback and the points moved in price action will be calculated)
+  There are many useful pieces of information that can be mined from this. I'm still in the proces of getting it with data visualizaiton and some basic statistics. I will update this routinely as I'm mainly working on this each week so I cna uncover how to use this information to help me understand what trades to take
